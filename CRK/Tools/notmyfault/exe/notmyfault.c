@@ -308,7 +308,7 @@ int WINAPI WinMain(	HINSTANCE hInstance,
 		if( cmdLine[i][0] == '/' ||
 			cmdLine[i][0] == '-' ) {
 
-			if( !wcsicmp( &cmdLine[i][1], L"crash" )) {
+			if( !_wcsicmp( &cmdLine[i][1], L"crash" )) {
 
 				if( StartMyFaultDriver( NULL )) {
 
